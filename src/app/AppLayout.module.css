@@ -1,3 +1,8 @@
+:root {
+  /* Sets the header height */
+  --header-height: 65px;
+}
+
 .header {
   position: fixed;
   background-color: blue;
@@ -5,12 +10,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 65px;
+  height: var(--header-height);
+  box-shadow: 0 5px 5px #888;
+  z-index: 1;
 }
 
+/* Header Link Styles */
 .Link {
   color: white;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -21,4 +29,9 @@
 .Link:active {
   color: #AAA;
   transition: color 0.2s ease-out;
+}
+
+.main {
+  position: relative;
+  top: var(--header-height);
 }
