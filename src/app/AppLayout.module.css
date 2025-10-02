@@ -1,8 +1,10 @@
 .header {
+  position: fixed;
   background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 65px;
 }
 
@@ -10,4 +12,13 @@
   color: white;
   font-family: "Roboto";
   text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+.Link:hover {
+  color: #CCC;
+  transition: color 0.2s ease-out;
+}
+.Link:active {
+  color: #AAA;
+  transition: color 0.2s ease-out;
 }
