@@ -1,3 +1,5 @@
-const ROUTES = {};
+const ROUTES = {
+  homepage: "/",
+};
 
 export default ROUTES;

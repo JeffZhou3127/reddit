@@ -4,8 +4,7 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 import AppLayout from "./AppLayout";
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/">
-    <Route index element={<AppLayout />} />
+  <Route path="/" element={<AppLayout />}>
   </Route>
 ));
 
