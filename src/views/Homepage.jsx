@@ -28,8 +28,8 @@ const Homepage = () => {
   // If data successfully loaded:
   return (
     <div className={styles.container}>
-      {posts.map(({ PostImage, PostDescription, Author, id }) =>
-        <Post key={id} postImage={PostImage} postDescription={PostDescription} author={Author} />
+      {posts.map(({ postImage, postDescription, author, id }) =>
+        <Post key={id} postImage={postImage} postDescription={postDescription} author={author} />
       )}
     </div>
   );
